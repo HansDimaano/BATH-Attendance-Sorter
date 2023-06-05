@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hanken+Grotesk:wght@500&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="../css/upload.css">
+</head>
+<body>
+
+    <!-- Page Wrapper -->
+    <div class="page_wrapper">
+
+        <!-- Borderbox -->
+        <div class="borderbox">
+
+            <!-- Input -->
+            <input type='file' id="file_reader" accept='text/plain' onchange='readFile(event)'><br>
+
+            <!-- Upload -->
+            <label for="file_reader" class="upload">
+                <img src="../images/upload.png" alt="Logo">
+                <p>UPLOAD ATTENDANCE.TXT HERE</p>
+            </label>
+        </div>
+
+        <!-- Output DIV -->
+        <div id="output">
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/readFile.js"></script>
+    <script src="../js/revealAnimation.js"></script>
+
+</body>
+</html>

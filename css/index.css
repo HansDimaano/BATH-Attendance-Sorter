@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* DIVS */
+div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 18%;
+}
+
+/* Bath Spa Logo */
+.logo img{ 
+  width: 100%;
+  animation: revealRightOnce ease 1s;
+}
+
+/* Title */
+.title{ 
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bold;
+  font-size: 300px;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button */
+a {
+  background-color: #394A63;
+  color: white;
+  padding: 10px 30px;
+  font-size: 40px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  border-radius: 20px;
+  margin: 20px 0 40px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button Hover */
+a:hover {
+  background-color: #050A30;
+  box-shadow: 0 0 8px #050A30;
+}
+
+/* Subtitle */
+.sub_title{ 
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* BATH Description */
+.description{
+  width: 80%;
+  font-family: 'Alice', serif;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  line-height: 30px;
+}

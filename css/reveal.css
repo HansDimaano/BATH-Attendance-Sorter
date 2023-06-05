@@ -1,0 +1,95 @@
+/*
+    CSS FOR REVEAL ANIMATIONS
+    (partnered with Reveal Animations Script)
+*/
+
+
+/* UNREVEALED CONTENTS */
+
+/* 
+    
+    - These contents are not on their original position yet
+    - Opacity is set to 0
+    - All are transitioned by 1 second ease
+
+
+*/
+
+.reveal.right { /* animation is from right to original position */
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.left { /* animation is from left to original position */
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.down { /* animation is from down to original position */
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.up { /* animation is from up to original position */
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+/* REVEALED CONTENT ALREADY */
+
+/*
+
+    - The content is in original position
+    - Opacity is set to 1
+
+*/
+
+.reveal.active { /* means the content is revealed (active) */
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@keyframes revealUpOnce {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes revealDownOnce {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes revealLeftOnce {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes revealRightOnce {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

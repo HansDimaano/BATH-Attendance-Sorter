@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #394A63;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+/* Page Wrapper */
+.page_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Border */
+.borderbox {
+  background-color: #98bded;
+  border: 25px solid white;
+  border-radius: 10px;
+  margin: 40px;
+  animation: revealUpOnce ease 1s;
+}
+
+/* Input */
+input {
+  display: none;
+}
+
+/* Label */
+.upload {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Upload Image */
+.upload img { 
+  width: 30%;
+}
+
+/* Upload Paragraph */
+p {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/* Output DIV */
+#output {
+  display: flex;
+  margin: 0 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Output Table */
+table {
+  background-color: #1d2634;
+  color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+/* Output Table Data */
+th, td {
+  padding: 30px 100px;
+  text-align: center;
+}
